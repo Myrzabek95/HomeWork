@@ -1,0 +1,12 @@
+{
+  "name": "HomeWork5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tree": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
