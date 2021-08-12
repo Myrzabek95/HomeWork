@@ -8,7 +8,11 @@ const MainPath = process.argv.slice(2)[0];
 
 async function Main(MainPath){ 
     if (!MainPath){
-        console.log('Wrong Path');
+        console.log('NO PATH');
+        return;
+    }
+    if (!fs.existsSync(MainPath)){
+        console.log('DIRECTORY DOES NOT EXIST');
         return;
     }
     MainPath = MainPath.slice(0, -1);
