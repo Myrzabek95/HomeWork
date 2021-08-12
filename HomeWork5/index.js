@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 let result = {
     files: [],
     dirs: []
@@ -15,17 +16,15 @@ async function Main(MainPath){
         console.log('DIRECTORY DOES NOT EXIST');
         return;
     }
-    MainPath = MainPath.slice(0, -1);
     result.dirs.push(MainPath);
     let r = await getDirContent(MainPath);
     console.log(result);
 }
 
 async function getDirContent(FolderPath){
-    FolderPath = FolderPath + '/';  
     let files = await fs.promises.readdir(FolderPath)
     for await (const file of files){
-        let current_path = FolderPath + file; 
+        let current_path = path.join(FolderPath, file); 
         let stat = await fs.promises.lstat(current_path);
         if(stat.isFile())
             result.files.push(current_path);
