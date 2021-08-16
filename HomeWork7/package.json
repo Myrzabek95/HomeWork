@@ -1,0 +1,27 @@
+{
+  "name": "HomeWork7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test" : "./node_modules/.bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mocha": "^9.0.3",
+    "mongodb": "^4.1.0",
+    "mongoose": "^5.13.7",
+    "mongoose-auto-increment": "^5.0.1",
+    "prettier": "^2.3.2",
+    "rss-parser": "^3.12.0",
+    "should": "^13.2.3",
+    "supertest": "^6.1.5",
+    "xml2js": "^0.4.23"
+  }
+}
