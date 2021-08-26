@@ -1,0 +1,83 @@
+.row {
+  margin-top: 12.5%;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 35px 5px;
+}
+
+.col-4 {
+  background-position-y: -100px;
+  background-color: #5bc0de;
+  position: relative;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.col-8 {
+  background: linear-gradient(to bottom right);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #5bc0de;
+  margin-right: 5px;
+  outline: none;
+  width: 230px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.form_center {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.top20 {
+  margin-top: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Courgette");
+
+.favourite_list {
+  margin-top: 100px;
+  margin-left: 15px;
+  font-family: "Courgette", cursive;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+.display {
+  margin-left: 70px;
+  margin-top: 40px;
+  margin-right: 70px;
+}
+
+.display p {
+  color: #5bc0de;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  /* border-bottom: 1px solid #5bc0de; */
+  margin-top: 20px;
+
+  background: linear-gradient(to right, #5bc0de, rgba(255, 255, 255, 0.04)) left
+    bottom no-repeat;
+  background-size: 100% 1px;
+}
+
+.display p span {
+  color: black;
+}
+
+p.error {
+  border: none;
+  color: red;
+}
+
+p.warning {
+  border: none;
+  color: orange;
+}
