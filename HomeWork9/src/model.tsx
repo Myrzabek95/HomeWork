@@ -24,6 +24,7 @@ interface IWeatherDataProps {
   weather: Weather;
   favourite: boolean;
   onToggleFavouriteCity: () => void;
+  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 interface IFavouriteListProps {
@@ -31,11 +32,10 @@ interface IFavouriteListProps {
   onClick: (event: MouseEvent<HTMLDivElement>) => void;
 }
 
-interface IInputFormProps {
+export interface IInputFormProps {
   searchCity: string;
   onChange: (event: FormEvent<HTMLInputElement>) => void;
   onSearchCity: () => void;
-  onClick: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 export interface HourWeatherInfo {
@@ -58,10 +58,4 @@ export interface ICitynfoProps {
   cityweather: CityWeather;
 }
 
-export {
-  Weather,
-  IWeatherApp,
-  IWeatherDataProps,
-  IFavouriteListProps,
-  IInputFormProps,
-};
+export { Weather, IWeatherApp, IWeatherDataProps, IFavouriteListProps };

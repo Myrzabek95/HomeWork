@@ -1,7 +1,7 @@
 import React, { Component, KeyboardEvent } from "react";
 import { IInputFormProps } from "../model";
 
-class InputForm extends Component<IInputFormProps> {
+export class InputForm extends Component<IInputFormProps> {
   gotCity = () => {
     this.props.onSearchCity();
   };
@@ -29,5 +29,3 @@ class InputForm extends Component<IInputFormProps> {
     );
   }
 }
-
-export { InputForm };

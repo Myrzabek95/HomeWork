@@ -129,7 +129,7 @@ class App extends Component<{}, IWeatherApp> {
           weather: {
             ...this.state.weather,
             received: false,
-            error_text: error,
+            error: error,
           },
         });
       });
@@ -216,6 +216,7 @@ class App extends Component<{}, IWeatherApp> {
                         weather={this.state.weather}
                         onToggleFavouriteCity={this.toggleFavourite}
                         favourite={this.isFavourite(this.state.searchCity)}
+                        onClick={this.detailClick}
                       />
                     </div>
                   </div>
