@@ -1,0 +1,12 @@
+<p *ngFor="let item of TranslateList">
+  {{ item.id }}
+  <span *ngFor="let val of item.values">
+    | {{ val.lang }} : {{ val.text }}</span
+  >
+</p>
+
+<span>Type in an English word:</span>
+<input type="text" [(ngModel)]="srcWord" />
+<button mat-raised-button (click)="onGetTranslation()" color="primary">
+  Get translation
+</button>
