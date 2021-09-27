@@ -1,0 +1,19 @@
+<form class="px-10">
+  <mat-form-field>
+    <mat-select [(value)]="selected">
+      <mat-option *ngFor="let language of languages" [value]="language">
+        {{ language }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="No. of words:" [(value)]="wordsNumber">
+      <mat-option *ngFor="let num of wordsNumbers" [value]="num">
+        {{ num }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="saveSettings()">
+    Save
+  </button>
+</form>
